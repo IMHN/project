@@ -1,0 +1,320 @@
+<!-- BloggerDynamicSlider Basic CSS -->
+<style type="text/css">
+/**
+ *  jQuery BloggerDynamicSlider v1.0.0
+ *  Copyright 2016 http://shuvojitdas.com
+ *  Contributing Author: Shuvojit Das
+ *  Plugin URL: https://github.com/shuvojit33/blogger-dynamic-slider
+ *
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.0/flexslider.min.css");
+
+/* Preloader */
+
+.flexslider.loading:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(https://lh3.googleusercontent.com/-WWve06d4dB4/Vq28tN4LMUI/AAAAAAAAFcM/k8IQajpDnS4/h120/loader.gif) no-repeat center center;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 9999;
+}
+
+.flexslider.loading ul.flex-direction-nav,
+.flexslider.loading ol,
+.loading .flex-caption {
+    display: none;
+}
+
+.flexslider {
+    border: 1px solid #cacaca;
+    padding: 4px;
+    margin: 0 auto 60px auto;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.flexslider a {
+    text-decoration: none;
+}
+
+
+/* Caption/Post Title */
+
+.flex-caption {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 10px;
+    height: 60px;
+    background: #FFFFFF;
+    color: #1C1C1C;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 26px;
+    margin: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flex-caption span {
+    display: table-cell;
+    vertical-align: middle;
+    height: 60px;
+}
+
+.flex-caption.overlayDark,
+.flex-caption.overlayLight {
+    margin-bottom: -60px;
+    bottom: 60px;
+    position: relative;
+}
+
+.flex-caption.overlayDark {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.flex-caption.overlayLight {
+    background: rgba(255, 255, 239, 0.9);
+    color: #000;
+}
+
+ul.slides li a {
+    display: block;
+    overflow: hidden;
+}
+
+
+/* blogger css conflicts fix */
+
+.flexslider ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: initial !important;
+}
+
+.flexslider ul.flex-direction-nav li {
+    margin: 0;
+    padding: 0;
+    line-height: initial;
+}
+
+.flexslider ul li {
+    margin-bottom: 0 !important;
+}
+
+.flexslider img {
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+ul.flex-direction-nav {
+    position: static;
+}
+
+ul.flex-direction-nav li {
+    position: static;
+}
+
+.error {
+    font-family: monospace, sans-serif;
+}
+
+@media (max-width: 600px) {
+    .flex-caption {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+}
+</style>
+<!-- Include Dependency Script -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.0/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="http://shuvojitdas.com/script/jquery.bdslider.min.js"></script>
+<!-- BloggerDynamicSlider Basic CSS -->
+<style type="text/css">
+/**
+ *  jQuery BloggerDynamicSlider v1.0.0
+ *  Copyright 2016 http://shuvojitdas.com
+ *  Contributing Author: Shuvojit Das
+ *  Plugin URL: https://github.com/shuvojit33/blogger-dynamic-slider
+ *
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.0/flexslider.min.css");
+
+/* Preloader */
+
+.flexslider.loading:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(https://lh3.googleusercontent.com/-WWve06d4dB4/Vq28tN4LMUI/AAAAAAAAFcM/k8IQajpDnS4/h120/loader.gif) no-repeat center center;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 9999;
+}
+
+.flexslider.loading ul.flex-direction-nav,
+.flexslider.loading ol,
+.loading .flex-caption {
+    display: none;
+}
+
+.flexslider {
+    border: 1px solid #cacaca;
+    padding: 4px;
+    margin: 0 auto 60px auto;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.flexslider a {
+    text-decoration: none;
+}
+
+
+/* Caption/Post Title */
+
+.flex-caption {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 10px;
+    height: 60px;
+    background: #FFFFFF;
+    color: #1C1C1C;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 26px;
+    margin: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flex-caption span {
+    display: table-cell;
+    vertical-align: middle;
+    height: 60px;
+}
+
+.flex-caption.overlayDark,
+.flex-caption.overlayLight {
+    margin-bottom: -60px;
+    bottom: 60px;
+    position: relative;
+}
+
+.flex-caption.overlayDark {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.flex-caption.overlayLight {
+    background: rgba(255, 255, 239, 0.9);
+    color: #000;
+}
+
+ul.slides li a {
+    display: block;
+    overflow: hidden;
+}
+
+
+/* blogger css conflicts fix */
+
+.flexslider ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: initial !important;
+}
+
+.flexslider ul.flex-direction-nav li {
+    margin: 0;
+    padding: 0;
+    line-height: initial;
+}
+
+.flexslider ul li {
+    margin-bottom: 0 !important;
+}
+
+.flexslider img {
+    padding: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+ul.flex-direction-nav {
+    position: static;
+}
+
+ul.flex-direction-nav li {
+    position: static;
+}
+
+.error {
+    font-family: monospace, sans-serif;
+}
+
+@media (max-width: 600px) {
+    .flex-caption {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+}
+</style>
+<!-- Include Dependency Script -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.0/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="http://shuvojitdas.com/script/jquery.bdslider.min.js"></script>
+/**
+ *  jQuery BloggerDynamicSlider v1.0.0
+ *  Copyright 2016 http://shuvojitdas.com
+ *  Contributing Author: Shuvojit Das
+ *  Plugin URL: https://github.com/shuvojit33/blogger-dynamic-slider
+ *
+ */
+!function(a){a.fn.BloggerDynamicSlider=function(b){var c=a.extend({blogURL:"",labelName:"",maxItem:6,showPostTitle:!0,postTitleStyle:"default",imageWidth:544,imageHeight:280,animation:"fade",controlNav:!0,directionNav:!0,pauseOnHover:!1,slideshowSpeed:7e3,animationSpeed:600,animationLoop:!0},b);return this.each(function(){var b=a(this),d=b.attr("id"),e=c.blogURL+"/feeds/posts/summary/"+(0==c.labelName.length?"":"-/"+c.labelName.replace(/\,(\s+)?/g,"/"))+"?max-results="+c.maxItem+"&orderby=published&alt=json-in-script";a.ajax({type:"GET",url:e,async:!1,contentType:"application/json",dataType:"jsonp",success:function(a){var f,g,h,i,j,k,l,m,n,o,p,q,e=a.feed.entry||[];for(f="",f+='<div class="flexslider loading" style="max-width:'+c.imageWidth+'px">',f+='<ul class="slides">',g=0;g<e.length;++g){for(i=e[g],j=i.title.$t,k=i.media$thumbnail?i.media$thumbnail.url:"http://3.bp.blogspot.com/-sWtp_qRPNT8/UZYmQq5sAdI/AAAAAAAAEec/7YDbpK4Q6g8/s72-c/default+image.png",l=k.replace("s72-c","w"+c.imageWidth+"-h"+c.imageHeight+"-c"),m=i.link||[],h=0;h<m.length&&"alternate"!=m[h].rel;++h);n=m[h].href,o='<img src="'+l+'" width="'+c.imageWidth+'" height="'+c.imageHeight+'"/>',p=c.showPostTitle?'<p class="flex-caption'+("default"==c.postTitleStyle?"":" "+c.postTitleStyle)+'"><span>'+j+"</span></p>":"",q='<a href="'+n+'" target="_blank">'+o+p+"</a>",f+="<li>"+q+"</li>"}f+="</ul></div>",f+='<style type="text/css">#'+d+" .flexslider.loading {min-height:"+c.imageHeight+"px !important;}</style>",b.append(f)},error:function(a,c,d){b.append('<div class="error"><p>No Result! Or Error Loading Feed</p></div')},complete:function(){a("#"+d+" .flexslider").flexslider({animation:c.animation,controlNav:c.controlNav,directionNav:c.directionNav,pauseOnHover:c.pauseOnHover,slideshowSpeed:c.slideshowSpeed,animationSpeed:c.animationSpeed,animationLoop:c.animationLoop});var b=a("#"+d+" .flexslider ul.slides li a img"),e=0;b.on("load",function(){if(e++,e==b.length-1){var c=a("#"+d+" .flexslider").data("flexslider");c.animating=!1,c.flexAnimate(0),a("#"+d+" .flexslider").removeClass("loading")}})}})})}}(jQuery);
+
+<div id="slider1"></div>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#slider1").BloggerDynamicSlider({
+        imageWidth: 636, // Image width in px value
+        imageHeight: 398, // Image height in px value
+        maxItem: 6, // Max number of Slider Image to show
+        animation: "slide", // Select your animation type, "fade" or "slide"
+        showPostTitle: true, // Show post title as Caption ? (true/false)
+        postTitleStyle: "overlayLight", // Caption style: "default, "overlayDark" or "overlayLight"
+    });
+});
+</script>
+
+
