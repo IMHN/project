@@ -368,7 +368,7 @@ if (mql.matches) {
 
             function f(v) {
                 if (!g('unblocker')) {
-                    c('<p>Please disable your Adblocker to access this site! Thanks.<br/>Please disable your Adblocker to access this site! Thanks.</p>', 'unblocker')
+                    c('<p>Please disable your Adblocker to access this site! Thanks.</p>', 'unblocker')
                 }
             };
             (function() {
