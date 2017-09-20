@@ -1,0 +1,49 @@
+body#layout div.section {background-color:transparent;border:0;font-family:sans-serif;margin:0;overflow:visible;padding:0;position:relative}
+body#layout .top-tab-widget-menu ul,body#layout ul,#layout ul,body#layout div.section h4,#layout div.section h4 {display:none;}
+body#layout .draggable-widget .widget-wrap2 {background:#17CC90}
+body#layout .add_widget {background-color: rgba(84, 84, 84, 0.75);}
+body#layout .add_widget a {color: white}
+body#layout .editlink {color:#fff !important;background-color: #3D3D45;padding: 2px; padding-left: 15px; padding-right: 15px; border-radius: 50px;}
+
+body{background:#fff;color:#656e7f;font-family:Tahoma,Verdana,sans-serif;font-size:16px;font-weight:400;line-height:27px;margin:0}
+body#layout #mainbwrap{width:60%;float:left}body#layout #sidebar-wrapper{width:33%;left:0;padding:0;float:right}
+body#layout .sidebar-area{width:90%;margin:0;padding:0}
+body#layout #bwrapcontent,body#layout #sidebar-wrapper{padding:0 0 0 0;}
+body#layout #recent3,body#layout #banner160{width:50%;float:left;}
+
+
+body#layout #header {width:30%;margin:4px;float:left; background-color: #EBFFFB; padding:5px!important; border: 1px solid #D8D6D6; margin-bottom: 10px;}
+body#layout #header:before {content: &quot;Header&quot;; font-size: 18px; color: #484848; display: inline-block; font-family: serif; font-weight: 700;margin-bottom: 10px;}
+body#layout #recent1 {width: 95%;margin:4px;float: left; background-color: #EBFFFB; padding: 20px 0 !important; border: 1px solid #D8D6D6; margin-bottom: 10px;}
+body#layout #header-right {float:right;width:64%;margin:4px;background-color: #EBFFFB; padding:5px!important; border: 1px solid #D8D6D6; margin-bottom: 10px;}
+body#layout #header-right:before {content: &quot;Header ad slot (728x90 px )&quot;; font-size: 18px; color: #484848; display: inline-block; font-family: serif; font-weight: 700;margin-bottom: 10px;}
+body#layout #recent1 {width: 95%;margin:4px;float: left; background-color: #EBFFFB; padding: 20px 0 !important; border: 1px solid #D8D6D6; margin-bottom: 10px;}
+body#layout #recent1 .widget {width:90%;left: 20px; top: 10px;}
+body#layout #recent1:before {content: &quot;Featured Posts&quot;; font-size: 18px; color: #484848; display: inline-block; font-family: serif; font-weight: 700;}
+body#layout #adpost {width: 95%;margin:4px;float: left; background-color: #EBFFFB; padding: 20px 0 !important; border: 1px solid #D8D6D6; margin-bottom: 10px;}
+body#layout #adpost .widget {width:48%;left: 20px; top: 10px;}
+body#layout #adpost:before {content: &quot;Homepage only ad slot (728x90 px )&quot;; font-size: 18px; color: #484848; display: inline-block; font-family: serif; font-weight: 700;}
+body#layout #adpost2 {width: 48%;margin:4px;float: left; background-color: #EBFFFB; padding: 20px 0 !important; border: 1px solid #D8D6D6; margin-bottom: 10px;}
+body#layout #adpost2 .widget {width:90%;left: 20px; top: 10px;}
+body#layout #adpost2:before {content: &quot;Top Header Ad (728x90 px )&quot;; font-size: 18px; color: #484848; display: inline-block; font-family: serif; font-weight: 700;}
+body#layout #adpost3 {width: 98%;margin:4px;float: left; background-color: #EBFFFB; padding: 20px 0 !important; border: 1px solid #D8D6D6; margin-bottom: 10px;}
+body#layout #adpost3 .widget {width:90%;left: 20px; top: 10px;}
+body#layout #adpost3:before {content: &quot;Homepage only ad slot (728x90 px )&quot;; font-size: 18px; color: #484848; display: inline-block; font-family: serif; font-weight: 700;}
+body#layout #slider2 {width: 95%;margin:4px;float: left; background-color: #EBFFFB; padding: 20px 0 !important; border: 1px solid #D8D6D6; margin-bottom: 10px;}
+body#layout #slider2 .widget {width:90%;left: 20px; top: 10px;}
+body#layout #slider2:before {content: &quot;Carousel Slider&quot;; font-size: 18px; color: #484848; display: inline-block; font-family: serif; font-weight: 700;}
+body#layout .mag-wrapper {width:48%;margin:4px;float: left; background-color: #EBFFFB; padding: 20px 0 !important; border: 1px solid #D8D6D6; margin-bottom: 10px;}
+body#layout .mag-wrapper .widget {width:90%;left: 20px; top: 10px;}
+body#layout .mag-wrapper:before {content: &quot;Mag Wrapper&quot;; font-size: 18px; color: #484848; display: inline-block; font-family: serif; font-weight: 700;}
+
+body#layout .header17 {width: 95%;margin:4px;float: left; background-color: #EBFFFB; padding: 20px 0 !important; border: 1px solid #D8D6D6; margin-bottom: 10px;}
+body#layout .header17 .widget {width:90%;left: 20px; top: 10px;}
+body#layout .header17:before {content: &quot;Slider Widget&quot;; font-size: 18px; color: #484848; display: inline-block; font-family: serif; font-weight: 700;}
+
+body#layout #recent3 {width: 48%;margin:4px;float: left; background-color: #EBFFFB; padding: 20px 0 !important; border: 1px solid #D8D6D6; margin-bottom: 10px;}
+body#layout #recent3 .widget {width:90%;left: 20px; top: 10px;}
+body#layout #recent3:before {content: &quot;Mag Wrapper&quot;; font-size: 18px; color: #484848; display: inline-block; font-family: serif; font-weight: 700;}
+
+body#layout #banner160 {width: 45%;margin:4px;background-color: #EBFFFB; padding: 20px 0 !important; border: 1px solid #D8D6D6; margin-bottom: 10px;}
+body#layout #banner160 .widget {width:90%;left: 20px; top: 10px;}
+body#layout #banner160:before {content: &quot;Ad slot 160x600px&quot;; font-size: 18px; color: #484848; display: inline-block; font-family: serif; font-weight: 700;}
