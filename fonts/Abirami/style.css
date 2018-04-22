@@ -1,1 +1,7 @@
-@font-face{font-family:AbiramiRegular;src:url(https://imhn.github.io/project/fonts/Abirami/taun_elango_abirami.eot);src:url(https://imhn.github.io/project/fonts/Abirami/taun_elango_abirami.eot?#iefix) format('embedded-opentype'),url(https://imhn.github.io/project/fonts/Abirami/taun_elango_abirami.woff) format('woff'),url(https://imhn.github.io/project/fonts/Abirami/taun_elango_abirami.ttf) format('truetype'),url(https://imhn.github.io/project/fonts/Abirami/taun_elango_abirami.svg#taun_elango_abiramiregular) format('svg');font-weight:400;font-style:normal}
+@font-face {
+    font-family: 'AbiramiRegular';
+    src: url('https://imhn.github.io/project/fonts/Abirami/taun_elango_abirami.eot?#iefix') format('embedded-opentype'), 
+        url('https://imhn.github.io/project/fonts/Abirami/taun_elango_abirami.woff') format('woff'), 
+        url('https://imhn.github.io/project/fonts/Abirami/taun_elango_abirami.ttf')  format('truetype'),
+        url('https://imhn.github.io/project/fonts/Abirami/taun_elango_abirami.svg#taun_elango_abiramiregular') format('svg');
+}
